@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="nl-NL">
+    <head>
+        <meta charset="utf-8">
+        <title>Your account | Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/main.css">
+        
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="title">Dashboard</h1>
+
+            <div class="navigation">
+                <ul class="list">
+                    <li><a href="/"><img src="/static/resources/nav/dashboard.png"></a></li>
+                    <li><a href="/account"><img src="/static/resources/nav/account.png"></a></li>
+                    <% if(account.admin > 0){ %>
+                        <li><a href="/admin"><img src="/static/resources/nav/admin.png"></a></li>
+                    <% } %>
+                    <li><a href="/logout"><img src="/static/resources/nav/logout.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="title">Your Account</h2>
+
+            <div class="message">
+                <% if(msg.content !== ""){ %>
+                    <p style=<%= `color:${msg.color};` %>><%= msg.content %></p>
+                <% } %>
+            </div>
+    
+            <div class="account">
+                <div class="info dataBox">
+                    <h3 class="name">Information about you:</h3>
+                    <div class="data">
+                        <p>User ID: <%= account.id %></p>
+                        <p>Username: <%= account.username %></p>
+                        <p>Email adress: <%= account.email %></p>
+                    </div>
+                </div>
+
+                <div class="actions dataBox">
+                    <h3 class="name">Account actions</h3>
+                    <div class="data">
+                        <!--<p><span>Change password</span></p>
+                        <p><span>Change Username</span></p>
+                        <p><span>Delete Account</span></p>
+			<form method="POST" action=/admin/users/2><button name="action" value="delete">Delete</button></form>-->
+                        <p><span>Sorry, account actions</span></p>
+                        <p><span>are currently not available.</span></p>
+                    </div>
+                </div>
+
+                <div class="projects dataBox">
+                    <h3 class="name">Your Servers</h3>
+                    <div class="data">
+                        <% if(account.projects.length <= 0){ %>
+                            <p>You currently don't have any servers...</p>
+                        <% } else { %>
+                            <table>
+                                <tr>
+                                    <th>Server ID</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                </tr>
+                                <% for(var i in account.projects){ %>
+                                    <% var project = account.projects[i]; %>
+                                    <tr class="tableRow" onclick=<%= `window.location.assign('/console/${project.id}')` %>>
+                                        <td><%= project.id %></td>
+                                        <td><%= project.name %></td>
+                                        <td>   <%= project.status %></td>
+                                    </tr>
+                                <% } %>
+                            </table>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+        </div>
+    </body>
+</html>
+

@@ -1,5 +1,5 @@
 # OMM-Panel
-A NodeJS Panel to easily manage your nodejs projects. 
+A NodeJS Panel to easily manage your nodejs projects.
 
 ## Features
 - Windows and Linux support (Mac not officialy)

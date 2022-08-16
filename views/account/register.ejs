@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="nl-NL">
+    <head>
+        <meta charset="utf-8">
+        <title>Register | Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+
+    <body>
+        <div class="header loginHeader">
+            <h1 class="title">Dashboard</h1>
+        </div>
+
+        <div class="login">
+            <h2 class="title">Welcome to dashboard</h2><br>
+    
+            <div class="message">
+                <% if(msg.content !=="" ){ %>
+                    <p style=<%=`color:${msg.color};` %>><%= msg.content %></p>
+                <% } %>
+                <p></p>
+            </div>
+    
+            <form class="register-form" action="/login/register" method="POST">
+                <label>Email:</label><br><input type="email" name="email" required><br>
+                <label>Username:</label><br><input type="text" name="username" required><br>
+                <label>Password:</label><br><input type="password" name="password" required><br>
+                <label>Confirm password:</label><br><input type="password" name="password?" required><br><br>
+                <button type="submit">Register</button>
+            </form><br>
+    
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+    
+        <div class="footer">
+            <p>&copy;2022 Dashboard</p>
+        </div>
+    </body>
+</html>
+
