@@ -35,4 +35,5 @@ A NodeJS Panel to easily manage your nodejs projects.
 - If the submission is approved you can start your project for the first time
 
 ## TO DO
-- There are currently no tasks, you can submit them soon in our Discord server!
+- Preview images of the panel will be added soon!
+# https://dsc.gg/ommedia for more information and ideas for the project.
