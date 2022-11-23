@@ -1,5 +1,5 @@
 # ZionDash
-**A NodeJS Panel to easily manage your nodejs projects.
+**A NodeJS Panel to easily manage your nodejs projects.**
 
 # Join our [Discord server](https://officieelmika.nl/discord) for more information and ideas for the project.
 
