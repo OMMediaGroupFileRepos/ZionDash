@@ -27,7 +27,7 @@
 
 ## How to setup
 
-1. Download the panelfiles with `git clone https://github.com/OfficieelMika/OMM-Panel/`
+1. Download the panelfiles with `git clone https://github.com/ZionMediaOfficial/ZionDash/`
 2. Open the folder of the panel (where `index.js` is stored);
 3. run `npm install ` to install all the node modules;
 4. run `node .` to start the project for the first time;
