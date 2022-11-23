@@ -1,14 +1,11 @@
-# OMM-Panel
-**A NodeJS Panel to easily manage your nodejs projects. built by OfficieelMika and Hebbinkpro
-This repo is an maintained version of [Hebbinkpro's HP-Panel](https://github.com/Hebbinkpro/HP-Panel)**
+# ZionDash
+**A NodeJS Panel to easily manage your nodejs projects.
 
 # Join our [Discord server](https://officieelmika.nl/discord) for more information and ideas for the project.
 
 ## Features
 
 - Windows and Linux support
-- MacOS has database issues, we don't support it currently.
-we prefer Linux for an good quallity (vms are an option, note that this may cause lagg if you don't give it enough resources!)
 - You can run all types of nodejs projects
 - Project import (zips)
 - Panel to start/stop your projects and see their consoles
@@ -16,14 +13,15 @@ we prefer Linux for an good quallity (vms are an option, note that this may caus
 - Customized console logging system
 - Logging console data to a log file `data/console.log`
 - User acounts
-- Administrator panel to manage submissions and more
+- Administrator panel to manage submissions and other options
 
 ## What do we prefer
 
-- Using an 64-bit Linux system, 32-bits is possible, but make sure you can run the nodejs packages.
-- Windows XP - 11 are supported, 32-bits/64-bits (most computers today run 64-bit cpu's).
-- An good network connection, make sure it does not drop out if you want to use it when you want.
-- Older systems may not run the panel smoothly
+- Using an 64-bit Linux system, 32-bits is possible, but it may not work with your NodeJS version.
+- Windows XP - 11 are supported, 32-bits/64-bits.
+- An good network connection.
+- Older systems may not run the panel smoothly:
+- minimal 500MB, you may prefer more ram for your projects to let it run smooth.
 
 **NOTE THAT SOME DISTRO'S HAVE DROPPED SUPPORT. THEY MAY NOT BE ABLE TO RUN THE REQUIRED NODEJS VERSION ANYMORE, SEE NODEJS.ORG FOR THE LATEST LTS VERSION, WE PREFER THIS TOO.**
 
@@ -38,6 +36,7 @@ we prefer Linux for an good quallity (vms are an option, note that this may caus
 #  Checking if the panel is up
 
 - Go to `localhost:8080` or enter your public/serverip:8080 to access it.
+- you can change the port in `config.json`
 
 ## How to run a project on the panel
 
